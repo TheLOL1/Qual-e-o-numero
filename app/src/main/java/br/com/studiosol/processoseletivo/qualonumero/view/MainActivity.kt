@@ -24,8 +24,8 @@ import kotlinx.android.synthetic.main.activity_main.*
  * a normalização do display para não ser exibido zero(s) a esquerda dependendo do palpite realizado e por fim é feito a comparação do palpite com o número gerado da API.
  * Se o palpite for maior será exibido no Text View "É menor", se o palpite for menor será exibido no Text View "É maior", se o palpite for igual será exibido no Text View "Acertou!".
  * Quando o usúario acertar o palpite o botão "Nova Partida" é setado como habilitado e se o usúario pressionar é feito um novo request para gerar um novo número aleatório.
- * Caso haja erro no request o status code que foi retornado em um objeto JSON, é armazenado em uma várivel global, é feito a conversão do erro para o display seguindo a mesma lógica do palpite e por fim o botão "Nova Partida" é habilitado,
- * e caso pressionado realiza a mesma ação descrita anteriormente.
+ * Caso haja erro no request o status code que foi retornado em um objeto JSON, é armazenado em uma várivel global, é feito a conversão do erro para o display seguindo a mesma lógica do palpite (exceto a parte de percorrer a string)
+ * e por fim o botão "Nova Partida" é habilitado, e caso pressionado realiza a mesma ação descrita anteriormente.
  * Para a paleta de cores foi utilizada a API (disponível em: https://github.com/Pes8/android-material-color-picker-dialog) para seleção da cor, e sempre quando o usúario confirmar a seleção de uma cor,o valor em hex desta cor é armazenado
  * em uma váriavel global e é feita a atualização dos segmentos para esta nova cor e posteriormente todos os novos palpites também serão exibidos no display com esta nova cor.
  */
