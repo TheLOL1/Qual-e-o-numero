@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/txtViewResultadosPossiveis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/PrimeiroViewA"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="100dp"
+        android:background="@android:color/white"
+        app:layout_constraintRight_toLeftOf="@id/SegundoViewA"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtViewResultadosPossiveis" />
+
+    <TextView
+        android:id="@+id/PrimeiroViewB"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/PrimeiroViewA"
+        app:layout_constraintLeft_toRightOf="@id/PrimeiroViewA"/>
+
+    <TextView
+        android:id="@+id/PrimeiroViewC"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/PrimeiroViewB"
+        app:layout_constraintLeft_toRightOf="@id/PrimeiroViewA"/>
+
+    <TextView
+        android:id="@+id/PrimeiroViewD"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/PrimeiroViewC"
+        app:layout_constraintLeft_toLeftOf="@id/PrimeiroViewA"
+        app:layout_constraintRight_toRightOf="@id/PrimeiroViewA"/>
+
+    <TextView
+        android:id="@+id/PrimeiroViewE"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@id/PrimeiroViewD"
+        app:layout_constraintLeft_toLeftOf="@id/PrimeiroViewA"/>
+
+    <TextView
+        android:id="@+id/PrimeiroViewF"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/PrimeiroViewA"
+        app:layout_constraintLeft_toLeftOf="@id/PrimeiroViewA"/>
+
+    <TextView
+        android:id="@+id/PrimeiroViewG"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:background="@android:color/white"
+        app:layout_constraintRight_toRightOf="@id/PrimeiroViewC"
+        app:layout_constraintLeft_toLeftOf="@id/PrimeiroViewE"
+        app:layout_constraintTop_toBottomOf="@id/PrimeiroViewF"/>
+
+
+    <TextView
+        android:id="@+id/SegundoViewA"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hexagono"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtViewResultadosPossiveis" />
+
+    <TextView
+        android:id="@+id/SegundoViewB"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/hexagono"
+        app:layout_constraintTop_toBottomOf="@id/SegundoViewA"
+        app:layout_constraintLeft_toRightOf="@id/SegundoViewA"/>
+
+    <TextView
+        android:id="@+id/SegundoViewC"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/hexagono"
+        app:layout_constraintTop_toBottomOf="@id/SegundoViewB"
+        app:layout_constraintLeft_toRightOf="@id/SegundoViewA"/>
+
+    <TextView
+        android:id="@+id/SegundoViewD"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/hexagono"
+        app:layout_constraintTop_toBottomOf="@id/SegundoViewC"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/SegundoViewE"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/hexagono"
+        app:layout_constraintBottom_toTopOf="@id/SegundoViewD"
+        app:layout_constraintLeft_toLeftOf="@id/SegundoViewA"/>
+
+    <TextView
+        android:id="@+id/SegundoViewF"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/hexagono"
+        app:layout_constraintTop_toBottomOf="@id/SegundoViewA"
+        app:layout_constraintLeft_toLeftOf="@id/SegundoViewA"/>
+
+    <TextView
+        android:id="@+id/SegundoViewG"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:background="@color/ledApagado"
+        app:layout_constraintRight_toRightOf="@id/SegundoViewC"
+        app:layout_constraintLeft_toLeftOf="@id/SegundoViewE"
+        app:layout_constraintTop_toBottomOf="@id/SegundoViewF"/>
+
+    <TextView
+        android:id="@+id/TerceiroViewA"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/SegundoViewA"
+        app:layout_constraintTop_toBottomOf="@id/txtViewResultadosPossiveis"/>
+
+    <TextView
+        android:id="@+id/TerceiroViewB"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/TerceiroViewA"
+        app:layout_constraintLeft_toRightOf="@id/TerceiroViewA"/>
+
+    <TextView
+        android:id="@+id/TerceiroViewC"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/TerceiroViewB"
+        app:layout_constraintLeft_toRightOf="@id/TerceiroViewA"/>
+
+    <TextView
+        android:id="@+id/TerceiroViewD"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/TerceiroViewC"
+        app:layout_constraintLeft_toLeftOf="@id/TerceiroViewA"
+        app:layout_constraintRight_toRightOf="@id/TerceiroViewA"/>
+
+    <TextView
+        android:id="@+id/TerceiroViewE"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@id/TerceiroViewD"
+        app:layout_constraintLeft_toLeftOf="@id/TerceiroViewA"/>
+
+    <TextView
+        android:id="@+id/TerceiroViewF"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/TerceiroViewA"
+        app:layout_constraintLeft_toLeftOf="@id/TerceiroViewA"/>
+
+    <TextView
+        android:id="@+id/TerceiroViewG"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:background="@android:color/white"
+        app:layout_constraintRight_toRightOf="@id/TerceiroViewC"
+        app:layout_constraintLeft_toLeftOf="@id/TerceiroViewE"
+        app:layout_constraintTop_toBottomOf="@id/TerceiroViewF"/>
+
+    <Button
+        android:id="@+id/btnNovaPartida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/SegundoViewD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="@string/nova_partida"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone"
+        android:onClick="novaPartida"
+        android:textAllCaps="false"/>
+
+
+    <EditText
+        android:id="@+id/editTXTPalpite"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/digite_o_palpite"
+        android:inputType="number"
+        android:digits="1234567890"
+        android:maxLength="3"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintLeft_toRightOf="@id/editTXTPalpite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/enviar"
+        android:textColor="@color/colorPrimary"
+        android:onClick="enviar"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

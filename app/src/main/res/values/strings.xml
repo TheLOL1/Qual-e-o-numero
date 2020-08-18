@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Qual é o número?</string>
+    <string name="digite_o_palpite">Digite o palpite</string>
+    <string name="enviar">ENVIAR</string>
+    <string name="nova_partida">Nova Partida</string>
+    <string name="paletadecores">paletaDeCores</string>
+</resources>
