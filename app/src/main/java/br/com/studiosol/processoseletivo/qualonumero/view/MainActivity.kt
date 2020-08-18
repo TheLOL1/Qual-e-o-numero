@@ -113,6 +113,15 @@ class MainActivity : AppCompatActivity()
     }
 
     /**
+     * Ao retornar do segundo plano, colorir os segmentos novamente devido ao problema de estar "descolorindo".
+     */
+
+    override fun onResume() {
+        alterarCorSegmentos()
+        super.onResume()
+    }
+
+    /**
      * Altera a cor dos segmentos que formam o número mais recente que o usúario enviou.
      */
 
