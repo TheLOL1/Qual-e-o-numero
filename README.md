@@ -1,1 +1,1 @@
-# Qual-e-o-numero
+# As Screenshots estão no arquivo "Screenshots.pdf"
